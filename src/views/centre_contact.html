@@ -36,9 +36,10 @@
     <link href="css/examples.css" rel="stylesheet">
     <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 </head>
 
-<body>
+<body background="img10.png">
     <header class="header header-sticky mb-4">
         <div class="container-fluid">
 
@@ -69,8 +70,7 @@
                 <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#"
                         role="button" aria-haspopup="true" aria-expanded="false">
                         <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg"
-                                alt="user@email.com">
-                        </div>
+                                alt="user@email.com"></div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end pt-0">
                         <div class="dropdown-header bg-light py-2">
@@ -110,7 +110,7 @@
                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
                             <svg class="icon me-2">
                                 <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-lock-locked"></use>
-                            </svg> Lock Account</a><a class="dropdown-item" href="se_connecter.html">
+                            </svg> Lock Account</a><a class="dropdown-item" href="#">
                             <svg class="icon me-2">
                                 <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
                             </svg> Se Déconnecter </a>
@@ -118,70 +118,56 @@
                 </li>
             </ul>
         </div>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Accueil</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0 ml-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
-            </form>
+        <div class="header-divider"></div>
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb my-0 ms-2">
+                    <li class="breadcrumb-item">
+                        <!-- if breadcrumb is single--><span>Home</span>
+                    </li>
+                    <li class="breadcrumb-item active"><span>Dashboard</span></li>
+                </ol>
+            </nav>
         </div>
-    </nav>
+    </header>
     <div class="container">
+        <h2>Centre de contact</h2>
+
         <div class="row">
-            <div class="col-md-12">
-                <h2>Informations des clients de l'agence immobilière</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Nom</th>
-                            <th>Adresse</th>
-                            <th>Téléphone</th>
-                            <th>Email</th>
-                            <th>Statut</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>John Doe</td>
-                            <td>123 Rue Principale</td>
-                            <td>(123) 456-7890</td>
-                            <td>john.doe@example.com</td>
-                            <td>Actif</td>
-                        </tr>
-                        <tr>
-                            <td>Jane Smith</td>
-                            <td>456 Rue de Belt</td>
-                            <td>(987) 654-3210</td>
-                            <td>jane.smith@example.com</td>
-                            <td>Inactif</td>
-                        </tr>
-                        <tr>
-                            <td>Jadon Blanco</td>
-                            <td>45 Rue de Saint Paul</td>
-                            <td>+33 7 6543210</td>
-                            <td>jadon@example.com</td>
-                            <td>Actif</td>
-                        </tr>
-                        <tr>
-                            <td>Neda Mendy</td>
-                            <td>456 Rue Secondaire</td>
-                            <td>+33 6 6543210</td>
-                            <td>jane.smith@example.com</td>
-                            <td>Actif</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Référent commercial</h5>
+                        <p class="card-text">Nom: Adelite Don</p>
+                        <p class="card-text">Téléphone: +33 3 46 79 67</p>
+                        <p class="card-text">Email: adelitedon@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Référent administratif et financier</h5>
+                        <p class="card-text">Nom: Micheline Brom </p>
+                        <p class="card-text">Téléphone: +33 9 87 65 32</p>
+                        <p class="card-text">Email: michelinebrom@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Directeur d'agence</h5>
+                        <p class="card-text">Nom: Robert Johnson</p>
+                        <p class="card-text">Téléphone: +33 6 55 12 45</p>
+                        <p class="card-text">Email: robert.johnson@example.com</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- CoreUI and necessary plugins-->
     <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
     <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
     <!-- Plugins and scripts required by this view-->
@@ -189,9 +175,7 @@
     <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js"></script>
     <script src="node_modules/@coreui/utils/dist/coreui-utils.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
